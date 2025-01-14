@@ -1,0 +1,23 @@
+@import url(textArea.css); 
+@import url(resultBox.css); 
+@import url(header.css); 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+.container{
+    height: 90%;
+    width: 100%;
+    display: flex;
+}
+
+.hide{
+    display: none;
+}

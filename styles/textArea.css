@@ -1,0 +1,13 @@
+#textArea{
+    height: 100%;
+    width: 100%;
+
+    background-color: rgb(236, 236, 236);
+
+    overflow: auto;
+    resize: none;
+
+    border: 0px;
+
+    padding: 30px;
+}

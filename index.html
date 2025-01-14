@@ -4,14 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/global.css">
     <title>HTML_IN_WEB</title>
 </head>
 
 <body>
-    <textarea id="textArea"></textarea>
+    <header>
+        <button class="preview" id="indexButton">Index.html</button>
+        <button class="preview" id="previewButton">Preview</button>
+    </header>
 
-    <div id="resultBox"></div>
+    <div class="container">
+        <textarea id="textArea"></textarea>
+        <div id="resultBox"></div>
+    </div>
+
 
     <script src="script.js"></script>
 </body>
