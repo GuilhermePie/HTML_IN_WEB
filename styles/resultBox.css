@@ -1,11 +1,10 @@
 #resultBox{
     width: 100%;
-    max-width: 683px;
     height: 100%;
+
+    overflow:auto;
 
     word-break: break-all;
 
-    border-left: 5px solid gray;
-
-    padding: 30px;
+    border-left: 1px solid gray;
 }

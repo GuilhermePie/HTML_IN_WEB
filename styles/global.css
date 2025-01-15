@@ -1,11 +1,11 @@
 @import url(textArea.css); 
 @import url(resultBox.css); 
 @import url(header.css); 
+@import url(scrollbar.css); 
 
 *{
     @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
     box-sizing: border-box;
-    font-size: 18px;
     margin: 0;
     padding: 0;
 }
@@ -22,4 +22,8 @@ body{
 
 .hide{
     display: none;
+}
+
+.highlight-line {
+    background-color: #fffa91;
 }
