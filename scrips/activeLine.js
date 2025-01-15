@@ -15,12 +15,10 @@ function highlightCurrentLine() {
     charCount += lines[i].length + 1; // +1 para o '\n'
     if (cursorPosition < charCount) {
       currentLineIndex = i;
-      console.log(currentLineIndex)
       break;
     }
-  }
 
-  
+  }
 
   // Calcular a posição e altura da linha atual
   const lineHeight = parseFloat(window.getComputedStyle(textArea).lineHeight);
