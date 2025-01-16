@@ -12,7 +12,7 @@ function highlightCurrentLine() {
   let currentLineIndex = 0;
 
   for (let i = 0; i < lines.length; i++) {
-    charCount += lines[i].length + 1; // +1 para o '\n'
+    charCount += lines[i].length + 1;
     if (cursorPosition < charCount) {
       currentLineIndex = i;
       break;
@@ -22,7 +22,8 @@ function highlightCurrentLine() {
 
   // Calcular a posição e altura da linha atual
   const lineHeight = parseFloat(window.getComputedStyle(textArea).lineHeight);
-  const highlightY = currentLineIndex * lineHeight;
+  const paddingTop = parseFloat(window.getComputedStyle(textArea).paddingTop);
+  const highlightY = currentLineIndex * lineHeight + paddingTop - textArea.scrollTop;
 
   // Atualizar o fundo do textarea com o destaque
   textArea.style.background = `
